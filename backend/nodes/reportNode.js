@@ -70,7 +70,7 @@ export async function reportNode(state, config) {
         {
           id: "analysis",
           title: "Analysis",
-          content: "An error occurred during analysis synthesis. Raw data has been collected.",
+          content: `An error occurred during analysis synthesis. Raw data has been collected. Error details: ${err.message}`,
           type: "text",
         },
       ],
