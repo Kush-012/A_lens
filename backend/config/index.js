@@ -24,7 +24,7 @@ const config = {
 
   groq: {
     apiKey: requireEnv("GROQ_API_KEY"),
-    model: optionalEnv("GROQ_MODEL", "llama-3.1-8b-instant"),
+    model: optionalEnv("GROQ_MODEL", "llama-3.3-70b-versatile"),
     temperatureLow: 0.1,
     temperatureHigh: 0.7,
   },

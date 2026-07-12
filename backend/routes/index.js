@@ -15,4 +15,9 @@ router.use("/api", chatRoutes);
 router.use("/api/dashboard", dashboardRoutes);
 router.use("/api/market", marketRoutes);
 
+// Fallback for Vercel Serverless environment if it strips the /api prefix
+router.use("/", chatRoutes);
+router.use("/dashboard", dashboardRoutes);
+router.use("/market", marketRoutes);
+
 export default router;

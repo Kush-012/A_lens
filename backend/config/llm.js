@@ -26,6 +26,7 @@ export async function generateJsonContent(systemInstruction, userPrompt, useHigh
       { role: "user", content: userPrompt }
     ],
     temperature: temperature,
+    max_tokens: 8000,
     response_format: { type: "json_object" }
   };
 
